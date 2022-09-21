@@ -1,0 +1,14 @@
+<h1 style="text-align: center;">
+    Page de login
+</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+        <mat-form-field>
+            <input matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" placeholder="Password" formControlName="password">
+        </mat-form-field>
+        <button mat-flat-button color="primary" [disabled]="!loginForm.valid" type="submit">Login</button>
+    </div>
+</form>
