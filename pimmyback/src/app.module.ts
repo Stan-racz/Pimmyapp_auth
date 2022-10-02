@@ -11,6 +11,7 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
+      url: "",
       type: 'mysql',
       host: 'localhost',
       port: 3307,

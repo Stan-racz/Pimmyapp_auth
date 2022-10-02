@@ -1,0 +1,6 @@
+npm install --save @nestjs/typeorm typeorm mysql2
+
+=================================================
+npm i -g npm-check-updates
+ncu -u
+npm install nest

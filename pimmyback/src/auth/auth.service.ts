@@ -10,6 +10,7 @@ export class AuthService {
     generateJWT(user: User): Observable<string> {
         return from(this.jwtService.signAsync({ user }));
     }
+    //Penser à faire une fonction si on veut crypter plusieurs trucs à la fois pas jsute le mdp
     hashPassword(password: string): Observable<string> {
         return from<string>(bcrypt.hash(password, 10));
     }

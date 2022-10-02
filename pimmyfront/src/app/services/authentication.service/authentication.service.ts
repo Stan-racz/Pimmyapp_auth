@@ -19,9 +19,9 @@ export class AuthenticationService {
       email: loginForm.email, password:
         loginForm.password
     }).pipe(
-      map((token, userRole) => {
+      map((token) => {
         console.log('token ' + token.access_token);
-        console.log('role ' + userRole);
+        console.log('role ' + token.role);
         localStorage.setItem('token retourné', token.access_token);
         return token;
       })
